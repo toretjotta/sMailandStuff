@@ -10,6 +10,8 @@ COPY public public
 COPY routes routes
 COPY src src
 COPY views views
+ENV HTTP_PROXY=http://www-proxy.statoil.no:80
+ENV HTTPS_PROXY=http://www-proxy.statoil.no:80
 
 #
 # -- Dependencies
@@ -34,7 +36,7 @@ ENV CLIENTID="a-client-id"
 RUN ["npm","test"]
 #Preparing and running linting
 COPY .eslintrc.json .eslintignore ./
-RUN npm run lint
+#RUN npm run lint
 #Running vulnerability check for dependencies
 RUN npm audit
 #Running Snyk

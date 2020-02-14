@@ -62,7 +62,7 @@ exports.getLocalConfig = function() {
     localConfig.hostUrl = hostUrl;
     localConfig.hostUrlWithPort = hostUrlWithPort;
     localConfig.port = port;
-
+    log.info (localConfig);
     return localConfig;
 
 };
