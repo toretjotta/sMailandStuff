@@ -10,7 +10,7 @@ spec:
     - name: production
       build:
         from: master
-  components:
+  components: 
     - name: webapp
       src: .
       ports:
