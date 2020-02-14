@@ -10,8 +10,6 @@ COPY public public
 COPY routes routes
 COPY src src
 COPY views views
-ENV HTTP_PROXY=http://www-proxy.statoil.no:80
-ENV HTTPS_PROXY=http://www-proxy.statoil.no:80
 
 #
 # -- Dependencies
