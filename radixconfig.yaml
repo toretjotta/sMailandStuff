@@ -5,7 +5,6 @@ metadata:
 spec:
   build:
     secrets:
-      - SNYK_TOKEN
   environments:
     - name: production
       build:
